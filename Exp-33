@@ -1,0 +1,6 @@
+def decimal_to_octal(decimal):
+    return oct(decimal)[2:]
+# Decimal to Octal
+decimal_number = 25
+octal_number = decimal_to_octal(decimal_number)
+print("Octal:", octal_number)
