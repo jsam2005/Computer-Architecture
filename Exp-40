@@ -1,0 +1,9 @@
+def two_stage_and_operation(a, b):
+    if a and b:
+        return True
+    else:
+        return False
+
+# Example usage:
+result = two_stage_and_operation(True, True)
+print(result)  # Output: True
