@@ -1,0 +1,30 @@
+# Four Stage Pipeline
+def four_stage_pipeline(instructions):
+    stage1_output = []
+    stage2_output = []
+    stage3_output = []
+    stage4_output = []
+    
+    for instr in instructions:
+        # Stage 1: Instruction Fetch
+        stage1_output.append(instr)
+        
+        # Stage 2: Decode
+        stage2_output.append(instr + " decoded")
+        
+        # Stage 3: Execute
+        stage3_output.append(instr + " executed")
+        
+        # Stage 4: Write Back
+        stage4_output.append(instr + " write back")
+    
+    return stage1_output, stage2_output, stage3_output, stage4_output
+# Four Stage Pipeline
+# Instructions
+instructions = ["Load", "Store", "Add", "Subtract"]
+stage1_output, stage2_output, stage3_output, stage4_output = four_stage_pipeline(instructions)
+print("\nFour Stage Pipeline:")
+print("Stage 1 Output:", stage1_output)
+print("Stage 2 Output:", stage2_output)
+print("Stage 3 Output:", stage3_output)
+print("Stage 4 Output:", stage4_output)
