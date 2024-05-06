@@ -1,0 +1,21 @@
+# Two Stage Pipeline
+def two_stage_pipeline(instructions):
+    stage1_output = []
+    stage2_output = []
+    
+    for instr in instructions:
+        # Stage 1: Instruction Fetch and Decode
+        stage1_output.append(instr)
+        
+        # Stage 2: Execution
+        stage2_output.append(instr + " executed")
+    
+    return stage1_output, stage2_output
+# Instructions
+instructions = ["Load", "Store", "Add", "Subtract"]
+
+# Two Stage Pipeline
+stage1_output, stage2_output = two_stage_pipeline(instructions)
+print("Two Stage Pipeline:")
+print("Stage 1 Output:", stage1_output)
+print("Stage 2 Output:", stage2_output)
