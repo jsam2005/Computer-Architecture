@@ -1,0 +1,6 @@
+def calculate_cpu_performance(clock_speed, ipc):
+    return clock_speed * ipc
+clock_speed = 3.5  # GHz
+ipc = 2.5  # Instructions per cycle
+performance = calculate_cpu_performance(clock_speed, ipc)
+print("CPU Performance:", performance, "GIPS")  # GIPS: Giga Instructions Per Second
