@@ -1,0 +1,9 @@
+def three_stage_and_operation(a, b, c):
+    if a and b and c:
+        return True
+    else:
+        return False
+
+# Example usage:
+result = three_stage_and_operation(True, True, False)
+print(result)  # Output: False
