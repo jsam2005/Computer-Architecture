@@ -1,0 +1,6 @@
+def hexadecimal_to_decimal(hexadecimal):
+    return int(hexadecimal, 16)
+# Hexadecimal to Decimal
+hexadecimal_number = 'A'                                                                                                 
+decimal_number = hexadecimal_to_decimal(hexadecimal_number)
+print("Decimal:", decimal_number)
